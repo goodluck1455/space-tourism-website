@@ -1,0 +1,94 @@
+/* body{
+    background-image: url("./assets/assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }  */
+
+   /* import HomeBackgroundImage from "./assets/assets/home/background-home-desktop.jpg"; */
+  .homePage{
+    /* position: fixed; */
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; */
+    /* for hom */
+    background-image: url("./assets/assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .mainPageImage{
+    /* Destination Info */
+    background-image: url("./assets/assets/destination/background-destination-desktop.jpg");
+  }
+
+  .crewPageImage{
+    /* Destination Info */
+    background-image: url("./assets/assets/crew/background-crew-desktop.jpg");
+    height: 100vh;
+  }
+
+  .technologyPageImage{
+    /* Destination Info */
+    background-image: url("./assets/assets/technology/background-technology-desktop.jpg");
+  }
+
+
+
+  /* // import TechInfoBackgroundImage from "./assets/assets/technology/background-technology-desktop.jpg"; */
+
+ 
+
+
+  @media screen and (max-width:1024px){
+    .homePage{
+      /* for hom */
+      background-size: cover;
+      overflow: hidden;
+    }
+
+
+
+  }
+
+  @media screen and (max-width:768px){
+    .homePage{
+      background-image: url("./assets/assets/home/background-home-tablet.jpg");
+    
+    }
+
+   
+
+  }
+
+
+
+
+  @media screen and (max-width:375px){
+    /* body{
+      background-image: url("./assets/assets/home/background-home-mobile.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    } */
+
+    .homePage{
+      /* for hom */
+      background-image: url("./assets/assets/home/background-home-mobile.jpg");
+      height: 100vh;
+    }
+   
+    .crewPageImage{
+      /* Destination Info */
+      background-image: url("./assets/assets/crew/background-crew-mobile.jpg");
+      height: 119vh;
+      /* height: 100vh; */
+    }
+  
+
+    .technologyPageImage{
+      background-image: url("./assets/assets/technology/background-technology-mobile.jpg");
+    }
+  
+  }

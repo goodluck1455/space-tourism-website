@@ -1,0 +1,242 @@
+/* body{
+  background-image: url("./assets/assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+
+/****************************************
+CSS OF THE DESTINATION CONTENT BEGINS HERE 
+*****************************************/
+/* body{
+  background-image: url("./assets/assets/destination/background-destination-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  min-width: 100%;
+} */
+
+
+
+.destinationContent{
+    display: flex;
+    gap: 17rem;
+    padding: 4rem;
+    }
+  
+  
+  
+  .DestHeading{
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    /* text-transform: uppercase; */
+    padding-bottom: 1rem;
+  }
+  
+  .Destnumber{
+  color: #FFF;
+  font-family: Barlow Condensed;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 4.725px;
+  opacity: 0.25;
+  padding-right: 8px;
+  
+  }
+  
+  .destLogo{
+    padding-top: 2.5rem;
+    animation: rotateAnimation 80s linear infinite; 
+    margin-left: 1.5rem;
+  }
+  
+  @keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .destInforMenuBar{
+    /* width: 327.4px; */
+    margin-top: 5rem;
+  /* height: 78px;
+  flex-shrink: 0; */
+    /* background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.774227142333984px); */
+  }
+  
+  .destInforMenuBar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: azure;
+    width: 200px;
+  }
+  
+  .destInforMenuBar ul li{
+    cursor: pointer;
+    height: 25px;
+     margin-right: 30px;
+    /* border-bottom: 2px solid white; */
+    position: relative;
+    /* border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s ease;  */
+    /* margin-right: 4rem; */
+   
+  }
+  
+  .destInforMenuBar ul li::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 8%;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    /* transform-origin: left; */
+    transition: transform 300ms ease-in;
+  }
+  
+  .destInforMenuBar ul li:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .Dmoon{
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px;
+  }
+  .monInfo{
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+   width: 26rem;
+  
+  }
+  
+  
+  
+  
+  .hrRule4Moon{
+  
+    width: 400px;
+    height: 0.5px;
+    margin-top: 2.5rem;
+    opacity: 0.2515;
+    background: #FFF;
+  }
+  
+  .distance4Moon{
+    display: flex;
+    color: #FFF;
+    padding-top: 1rem;
+  }
+  
+  .distance4MoonContentA{
+    margin-right: 6rem;
+  }
+  
+  .distance4MoonContentA p, .distance4MoonContentB p{
+    color: #D0D6F9;
+    font-family: "Barlow Condensed";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+  }
+  
+  .distance4MoonContentA h3, .distance4MoonContentB h3{
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  }
+
+
+  @media screen and (max-width:1024px){
+    .destinationContent {gap: 4rem;}
+    .destLogo { margin-left: -1.5rem; width: 100%;}
+  }
+
+  @media screen and (max-width:375px){
+    .destinationContent {
+      display: block;
+      margin-top: -2rem;
+    }
+
+      .DestHeadBody h3 {
+        width: 22rem;
+    }
+
+    .DestHeading {
+      font-size: 16px;
+      letter-spacing: 2.725px;
+      margin-left: -1.5rem;  
+  }
+
+  .destLogo {
+    margin-left: unset;}
+
+    .destInforMenuBar {
+      margin-top: 2rem;
+      margin-left: -1.5rem;}
+
+      .Dmoon {
+        margin-left: 1.5rem;
+        font-size: 62px;
+        text-align: center;}
+
+        .monInfo {  
+          font-size: 17px;
+          line-height: 28px;
+          width: 21.5rem;
+          text-align: center;
+          margin-left: -1.5rem;}
+
+          .distance4Moon {
+            padding-top: 2rem;
+            display: block;
+            text-align: center;}
+
+            .hrRule4Moon {
+              margin-top: 1.5rem;
+              opacity: 0.2515;
+              width: 347px;
+              margin-left: -1.5rem;}
+
+              .distance4MoonContentA {
+                margin-right: unset;
+            }
+
+              .distance4MoonContentB{
+                 margin-top: 2rem;
+              }
+
+              .distance4MoonContentA h3, .distance4MoonContentB h3 {
+                padding-top: 10px;}
+
+  }

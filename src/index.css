@@ -1,69 +1,496 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+*{
+  padding: 0;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+/* body{
+  background-image: url("./assets/assets/home/background-home-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+/* h1{
+  color: aliceblue;
+  font-size: 10rem;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+/* .home-page{
+  background-image: url("./assets/assets/home/background-home-desktop.jpg");
+} */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.8rem;
+  padding-left: 0.9rem;
+  position: relative;
+  /* padding-right: 0.9rem; */
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.logo{
+  padding-top: 1rem;
+}
+
+.lineRule{
+  position: absolute;
+  width: 450px;
+  height: 1px;
+  flex-shrink: 0;
+  left: 7rem;
+  margin-top: 2.5rem;
+  opacity: 0.2515;
+ background: #FFF;
+ z-index: 1;
+}
+.hrRule4Crew{
+display: none;
+}
+
+.MenuBar{
+  width: 830px;
+height: 78px;
+flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.04);
+backdrop-filter: blur(40.774227142333984px);
+}
+
+.MenuBar ul{
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+list-style: none;
+font-family: Barlow Condensed;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+/* line-height: normal; */
+letter-spacing: 2.7px; 
+padding-top: 2.3rem;
+margin-left: 0.9rem;
+}
+
+.MenuBar ul li{
+  cursor: pointer;
+  height: 40px;
+  font-weight: 400;
+  /* border-bottom: 2px solid white; */
+  position: relative;
+  /* border-bottom: 2px solid transparent; 
+  transition: border-bottom 0.3s ease;  */
+  /* margin-right: 4rem; */
+ 
+}
+
+.MenuBar ul li::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 8%;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  /* transform-origin: left; */
+  transition: transform 300ms ease-in;
+}
+
+.MenuBar ul li:hover::after {
+  transform: scaleX(1);
+}
+
+.active{
+  border-bottom: 3px solid white;
+}
+
+
+.listNumber{
+  color: #FFF;
+  font-weight: 700;
+  padding-right: 8px;
+}
+
+
+.hamburger, .hamburger-A{
+  display: none;
+}
+/* .MenuBar ul li:hover {
+  border-bottom: 2px solid white; 
+} */
+
+
+/****************************************
+CSS OF THE MAIN CONTENT BEGINS HERE 
+*****************************************/
+
+.mainContent{
+display: flex;
+ gap: 17rem;
+padding: 6rem;
+}
+
+.explore {
+  text-align: center;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%; /* Use percentage for border-radius for a perfect circle */
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10rem;
+  margin-top: 5.9rem;
+}
+
+.explore p {
+  color: #0B0D17;
+  font-family: Bellefair;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3px;
+  margin: 0; /* Remove default margin */
+  /* line-height: 3rem */
+}
+.travelHeading{
+  padding: 20px;
+  color: white;
+  
+}
+
+
+.travelHeading h3{
+  color: #D0D6F9;
+  font-family: Barlow Condensed;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.725px;
+}
+
+.travelHeading h1{
+  color: #FFF;
+  font-family: Bellefair;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.travelHeading P{
+  color: #D0D6F9;
+font-family: Barlow;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 32px; 
+}
+
+
+
+
+
+/****************************************
+CSS OF THE TECHINFO CONTENT BEGINS HERE 
+*****************************************/
+
+.techInfoCircle{
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Use percentage for border-radius for a perfect circle */
+  /* background: #FFF; */
+  border: 1px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 7rem;
+   margin-bottom: 1.2rem;
+  margin-top: 4rem; 
+cursor: pointer;
+color: #FFF;
+}
+
+.activetechInfoCircle{
+  background: #FFF;
+  color: black;
+}
+/* .activetechP{
+ color: #0B0D17;
+} */
+
+.techInfoCircle p{
+ 
+text-align: center;
+font-family: Bellefair;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 2px;
+}
+
+.TechInfoHolder{
+  display: flex;
+  color: #FFF;
+}
+
+.TechInfo{
+  margin-top: 4rem;
+  margin-left: 3rem;
+}
+
+.TechInfo h3{
+color: #FFF;
+font-family: Bellefair;
+font-size: 56px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 5px;
+}
+
+.TechInfo p:nth-child(1){
+  color: #D0D6F9;
+  font-family: "Barlow Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 2.7px;
+}
+
+.TechInfo > p{
+  color: #D0D6F9;
+  font-family: Barlow;
+  font-size: 18px;
+  font-style: normal;
+   font-weight: 400; 
+  line-height: 32px; 
+  padding-top: 5px;
+}
+
+.TechMainContent{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* gap: 2rem; */
+}
+.TechImage{
+  position: relative;
+  border: 2px solid transparent; 
+  /* border-radius: 100%;  */
+ 
+}
+
+.TechImage img{
+  background: url(<path-to-image>), lightgray 1px 1px / 100% 100% no-repeat;
+  mix-blend-mode: screen;
+width: 100%;
+/* margin-left: 10rem; */
+/* height: 858px; */
+/* flex-shrink: 0; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  a:hover {
-    color: #747bff;
+  100% {
+    transform: rotate(360deg);
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+/* .TechImage::after {
+  content: '';
+  position: absolute;
+  top: -2px; 
+  left: -2px; 
+  width: 100%;
+  height: 100%;
+  border-left: 2px solid burlywood; 
+  /* border-radius: inherit;  */
+  /* box-sizing: border-box; */
+  /* animation: rotate 250s linear infinite;  }*/
+
+/*_----------------------------------
+   Media for width:375px
+-----------------------------------*/
+
+@media screen and (max-width:1024px){
+  .mainContent {gap: 8rem;}
+
+  .lineRule {width: 253px;} 
+
+    .destLogo {width: 150%;}
+    .DestHeading {
+      font-size: 23px;}
+      .DestHeadBody h3{
+        width: 28rem;
+      }
+
+      .logo {margin-left: 0.7rem;}
+
+  
+        .MenuBar {width: 682px;}
+
+        /* .CrewPictures {margin-right: -8.8rem; width: 91.5%;} */
+
+}
+
+
+
+@media screen and (max-width:768px){
+  .mainContent{
+    display: block;
+  
+    }
+    .lineRule{
+      display: none;
+    }
+    .header{justify-content: space-evenly;}
+    .MenuBar{width: 542px;}
+
+}
+
+@media screen and (max-width:375px){
+
+/* media query for .MenuBar begings here */
+
+  .MenuBar ul{
+    flex-direction: column;
+    display: block;
+    height: 20px;
+    padding-top: 0.5rem;
+    font-size: 16px;
   }
+  
+
+  .MenuBar ul li { 
+    height: 23px;
+    padding-top: 3rem;
+}
+/* 
+  .MobileMenubar{
+    width: 250px;
+    height: 300px;
+  } */
+  
+ 
+ 
+  .MenuBar {
+    /* display: none; */
+    /* height: 447%; */
+    width: 212px;
+    margin-left: 1rem;
+  position: absolute;
+
+  height: 200vh;
+  backdrop-filter: blur(278.774227px);
+
+}
+
+
+
+  
+  .open{
+    /* display: block; */
+    margin-left: -13rem;
+    transition: 1s ease-in-out;
+    z-index: 1;
+}
+  
+.close{
+  margin-left: 1rem;
+  transition: 1s ease-in-out;
+}
+ 
+
+  .hamburger, .hamburger-A{
+    display: block;
+    color: white;
+  font-size: 2rem;
+  margin-top: 1.4rem;
+  margin-left: -3rem;
+cursor: pointer;
+  }
+  /* .hamburger-A{
+    color: white;
+  } */
+
+  .logo {margin-right: 18rem;}
+
+
+
+
+
+ 
+
+/* media query for .MenuBar ends here */
+
+
+.mainContent { 
+  gap: 10rem;
+  padding: 1rem;}
+
+.travelHeading P {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 18px
+}
+.travelHeading h3 {
+  font-size: 13px;
+  letter-spacing: 0.2rem;
+  text-align: center;}
+
+.travelHeading h1 {
+  font-size: 64px;
+  letter-spacing: 1.5rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.exploreBody{margin-left: 5rem;}
+  .explore {
+  
+    width: 160px;
+    height: 160px;
+    margin-top: 1.9rem;
+}
+.explore p{
+font-size: 22px}
+
+
+
+
+/* *****************************
+Media query for tECHNOLOGY content
+******************************* */
+.Holder4techInfoCircle{
+display: flex;
+}
+
+.techInfoCircle {
+  width: 50px;
+  height: 50px;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.TechInfo h3 {font-size: 36px;}
+.TechInfo p:nth-child(1) {text-align: center;}
+
+.TechInfo {
+margin-top: 1rem;
+    margin-left: unset;
+    text-align: center;
+    padding: 13px;}
+
+    .break{display: none;}
+
+   
+
+    
+
 }
