@@ -426,7 +426,7 @@ width: 100%;
     margin-left: 1rem;
   position: absolute;
 
-  height: 200vh;
+  /* height: 200vh; */
   backdrop-filter: blur(278.774227px);
 
 }
@@ -436,7 +436,7 @@ width: 100%;
   
   .open{
     /* display: block; */
-    margin-left: -13rem;
+    margin-left: -2rem;
     transition: 1s ease-in-out;
     z-index: 1;
     margin-top: 3.5rem;
@@ -445,7 +445,7 @@ width: 100%;
 }
   
 .close{
-  margin-left: 1rem;
+  margin-left: 14rem;
   transition: 1s ease-in-out;
   z-index: 1;
 }
@@ -455,8 +455,8 @@ width: 100%;
     display: block;
     color: white;
   font-size: 2rem;
-  margin-top: 1.4rem;
-  margin-left: -3.5rem;
+  margin-top: 1.6rem;
+  margin-left: 7.5rem;
 cursor: pointer;
 position: fixed;
 z-index: 1;
@@ -465,14 +465,16 @@ z-index: 1;
     color: white;
   } */
 
-  .logo {margin-right: 18rem;}
+  .logo {
+    position: fixed;
+    margin-right: 18rem;}
 
 
 /* media query for .MenuBar ends here */
 
 
 .mainContent { 
-  margin-top: 1rem;
+  margin-top: 4rem;
   gap: 10rem;
   padding: 1rem;}
 
