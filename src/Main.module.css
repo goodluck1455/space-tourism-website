@@ -38,6 +38,14 @@
 
 
   /* // import TechInfoBackgroundImage from "./assets/assets/technology/background-technology-desktop.jpg"; */
+  @media screen and (max-width:1280px){
+    .homePage{
+      height: 100vh;}
+
+
+     
+
+  }
 
  
 
@@ -46,7 +54,7 @@
     .homePage{
       /* for hom */
       background-size: cover;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
 
@@ -77,18 +85,27 @@
       /* for hom */
       background-image: url("./assets/assets/home/background-home-mobile.jpg");
       height: 100vh;
+      overflow-x: hidden;
     }
    
     .crewPageImage{
       /* Destination Info */
       background-image: url("./assets/assets/crew/background-crew-mobile.jpg");
       height: 119vh;
+      overflow-x: hidden;
       /* height: 100vh; */
     }
-  
+
+    .mainPageImage{
+      background-image: url("./assets/assets/destination/background-destination-mobile.jpg");
+      overflow-x: hidden;
+      /* position: relative; */
+      /* z-index: -1; */
+    }
 
     .technologyPageImage{
       background-image: url("./assets/assets/technology/background-technology-mobile.jpg");
+      overflow-x: hidden;
     }
   
   }

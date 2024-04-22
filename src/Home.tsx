@@ -35,7 +35,8 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     <>
-      <div className={`${Homecss.homePage} ${activeComponent === 'Destination' ? Homecss.mainPageImage : ''} 
+      <div className={`${activeComponent === 'home' ? Homecss.homePage : ''} 
+      ${activeComponent === 'Destination' ? Homecss.mainPageImage : ''} 
       ${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}
       ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`}>
 

@@ -55,6 +55,7 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
     padding-top: 2.5rem;
     animation: rotateAnimation 80s linear infinite; 
     margin-left: 1.5rem;
+    
   }
   
   @keyframes rotateAnimation {
@@ -185,11 +186,12 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
   @media screen and (max-width:375px){
     .destinationContent {
       display: block;
-      margin-top: -2rem;
+      /* margin-top: -2rem; */
     }
 
       .DestHeadBody h3 {
         width: 22rem;
+        margin-top: 4rem;
     }
 
     .DestHeading {
@@ -199,7 +201,10 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
   }
 
   .destLogo {
-    margin-left: unset;}
+    width: 90%;
+    /* position: relative; */
+        /* z-index: 2; */
+    margin-left: 0.4rem;}
 
     .destInforMenuBar {
       margin-top: 2rem;
@@ -238,5 +243,16 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
 
               .distance4MoonContentA h3, .distance4MoonContentB h3 {
                 padding-top: 10px;}
+
+                /* .destInforMenuBar ul li {
+                  z-index: -1;} */
+                  .CoverPage4DestiniNFO{
+                    margin-top: -5rem;
+                  }
+
+                  .destInforMenuBar ul li {
+                    margin-right: 26px;
+                    font-size: 1.1rem;
+                }
 
   }
