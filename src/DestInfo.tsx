@@ -94,7 +94,7 @@ const DestInfo: React.FC<DestInfoProps> = () => {
     <div>
 
     <div className='destInforMenuBar'>  
-    <ul>
+    <ul >
     <li className={activeDestination === 'MOON' ? 'active' : ''} onClick={() => displayDistination("MOON", EarthLogo1)}>MOON</li>
     <li className={activeDestination === 'MARS' ? 'active' : ''} onClick={() => displayDistination('MARS', MarsLogo1)}>MARS</li>
     <li className={activeDestination === 'EUROPA' ? 'active' : ''} onClick={() => displayDistination('EUROPA', europa)}>EUROPA</li>

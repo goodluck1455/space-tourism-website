@@ -16,8 +16,11 @@ import TechInfo from "./TechInfo";
 
 interface HomeProps {
   // Add any props that Home component may receive
-  setActiveComponent: (component: string) => void;
-  activeComponent: string;  
+  // setActiveComponent: (component: string) => void;
+  // activeComponent: string; 
+
+  setActiveComponent?: () => void;
+  activeComponent?: any; 
 }
 
 const Home: React.FC<HomeProps> = () => {
@@ -36,10 +39,10 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     <>
-      <div className={`${activeComponent === 'home' ? Homecss.homePage : ''} 
+      <div className= {`${activeComponent === 'home' ? Homecss.homePage : ''} 
       ${activeComponent === 'Destination' ? Homecss.mainPageImage : ''} 
       ${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}
-      ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`}>
+      ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`} >
 
         <div className="header">
           <div className="logo">

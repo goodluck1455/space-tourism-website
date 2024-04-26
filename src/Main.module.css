@@ -66,7 +66,7 @@
 
   }
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:768px), (max-width:740px), (max-width:820px), (max-width:853px) {
     .homePage{
       background-image: url("./assets/assets/home/background-home-tablet.jpg");
     
@@ -75,7 +75,7 @@
     .crewPageImage{
       /* Destination Info */
       background-image: url("./assets/assets/crew/background-crew-tablet.jpg");
-      height: 113vh;
+      height: 111.9vh;
     }
 
     .technologyPageImage{
@@ -87,14 +87,18 @@
 
   }
 
- 
+  @media screen and  (max-width:740px){
+    .crewPageImage{ height: unset;}
+
+    .technologyPageImage{height: unset;}
+  }
 
 
   @media screen and (max-width:414px), (max-width:430px){
     .homePage{
       /* for hom */
       background-image: url("./assets/assets/home/background-home-mobile.jpg");
-      /* height: 100vh; */
+      height: 100vh;
       overflow-x: hidden;
     }
 
@@ -108,7 +112,7 @@
       background-image: url("./assets/assets/crew/background-crew-mobile.jpg");
       /* height: 119vh; */
       overflow-x: hidden;
-      /* height: 100vh; */
+      height: 100vh;
     }
 
     .technologyPageImage{

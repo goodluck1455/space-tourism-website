@@ -25,7 +25,7 @@ function MainInfo({ setActiveComponent }: { setActiveComponent: (component: stri
         </div>
 
         <div className="exploreBody">
-          <div className="explore" onClick={() => {setActiveComponent('Destination') }}>
+          <div className="explore" onClick={() => {setActiveComponent('Destination') }} >
             <p>EXPLORE</p>
           </div>
         </div>
