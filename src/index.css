@@ -129,18 +129,59 @@ display: flex;
 padding: 6rem;
 }
 
+
+.exploreBody{
+z-index: 1;
+}
+
+.explore::after{
+  /* pointer-events: none; */
+  content: ""; 
+  display: block; 
+  position: absolute; 
+  top: 0%; 
+  left: 0%; /* Push
+  /* text-align: center; */
+  width: 240px;
+  height: 240px;
+  border-radius: 50%; 
+  /* background: #c45050; */
+  /* opacity: 0.5; */
+  z-index: -1;
+  background: #FFF;
+}
+.explore:hover:after{
+  top: -15%; 
+  left: -15%;
+  width: 310px;
+  height: 310px;
+  opacity: 0.3;
+  transition: 1s ease-in-out;
+  }
 .explore {
+  /* pointer-events: all; */
+  position: relative;
   text-align: center;
   width: 240px;
   height: 240px;
-  border-radius: 50%; /* Use percentage for border-radius for a perfect circle */
+  border-radius: 50%; 
   background: #FFF;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 10rem;
+  /* margin-left: -3rem;
+  margin-top: 5rem; */
+  cursor: pointer;;
+  /* opacity: 0.2; */
   margin-top: 5.9rem;
 }
+
+
+
+
+
+
 
 .explore p {
   color: #0B0D17;
@@ -150,6 +191,8 @@ padding: 6rem;
   font-weight: 400;
   letter-spacing: 3px;
   margin: 0; /* Remove default margin */
+  position: relative;
+  z-index: 1;
   /* line-height: 3rem */
 }
 .travelHeading{
@@ -338,8 +381,12 @@ width: 100%;
 
             .destInforMenuBar {
               /* width: 327.4px; */
-              margin-top: 7rem;}
+              margin-left: -5rem;
+              margin-top: 6rem;
+            }
 
+
+            
 
               .Dmoon {
                 text-align: justify;
@@ -350,6 +397,21 @@ width: 100%;
 
               .hrRule4Moon {
                 width: 434px;}
+
+
+                .explore::after {
+                  top: 10%;
+                  left: 10%}
+
+                  .explore:hover:after {
+                    top: -16%;
+                    left: -16%;
+                    width: 400px;
+                    height: 400px;}
+
+                  
+                  .destInforMenuBar ul li {
+                    height: 29px;}
       
 
   }
@@ -359,7 +421,9 @@ width: 100%;
 -----------------------------------*/
 
 @media screen and (max-width:1024px){
-  .mainContent {gap: 8rem;}
+  .mainContent {
+    margin-top: 0rem;
+    gap: 8rem;}
 
   .lineRule {width: 253px;} 
 
@@ -377,11 +441,18 @@ width: 100%;
 
         /* .CrewPictures {margin-right: -8.8rem; width: 91.5%;} */
 
+        .explore {
+          width: 250px;
+          height: 250px;}
+          .explore p {
+            font-size: 39px;
+        }
+
 }
 
 
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px), (max-width:820px){
   .mainContent{
     display: block;
   
@@ -389,10 +460,176 @@ width: 100%;
     .lineRule{
       display: none;
     }
-    .header{justify-content: space-evenly;}
+    /* .header{justify-content: space-evenly;} */
     .MenuBar{width: 542px;}
 
+    .listNumber {display: none;}
+
+    .travelHeading {text-align: center;}
+     .explore{
+      margin-left: 10rem;
+     }
+    
+
+
+/***************************************
+ media query for Techinfo begins here
+ ************************************/
+ .TechMainContent {
+  display: inline-flex;
+  flex-direction: column-reverse; 
 }
+
+.TechImage img {
+  margin-top: 2rem;
+  height: 388px;}
+
+  .TechInfoHolder {
+    display: block;}
+    .Holder4techInfoCircle{
+      display: flex;
+      margin-left: 9rem;
+        margin-top: -2rem;
+    }
+
+    .TechInfo {
+      margin-top: 2rem;
+      text-align: center;}
+
+      .techInfoCircle {margin-left: 4rem;}
+
+      .break{display: none;}
+
+      .TechInfo > p {
+        padding-right: 3rem;}
+
+}
+
+
+
+
+@media screen and (max-width:414px), (max-width:430px){
+  .MenuBar ul{
+    flex-direction: column;
+    padding-top: 0.5rem;
+    font-size: 22px;
+    margin-left: 2.9rem;
+  }
+  .MenuBar ul li { 
+    height: 24px;
+    padding-top: 3.5rem;
+}
+.MenuBar {
+  width: 363px;
+  margin-left: 1rem;
+position: absolute;
+backdrop-filter: blur(216.774227px);
+}
+
+
+.open{
+  /* display: block; */
+  margin-left: 5rem;
+  transition: 1s ease-in-out;
+  z-index: 1;
+  margin-top: 3.8rem;
+  position: fixed;
+  height: 50vh;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.close{
+margin-left: 26rem;
+transition: 1s ease-in-out;
+z-index: 1;
+margin-top: 3.5rem;
+}
+
+
+
+.hamburger, .hamburger-A{
+  display: block;
+  color: white;
+font-size: 2.5rem;
+margin-top: 1.4rem;
+margin-left: 21rem;
+cursor: pointer;
+position: fixed;
+
+/* position: relative; */
+z-index: 1;
+}
+
+.logo {position: fixed;}
+
+
+.mainContent { 
+  margin-top: 7rem;
+  /* gap: 10rem; */
+  padding: 1rem;}
+
+
+
+.travelHeading P {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 18px;
+  line-height: 29px;
+}
+.travelHeading h3 {
+  font-size: 15px;
+  letter-spacing: 0.2rem;
+  text-align: center;}
+
+.travelHeading h1 {
+  font-size: 64px;
+  letter-spacing: 1.3rem;
+  padding: 10px;
+  margin-left: 1rem;
+}
+
+.explore {
+  width: 230px;
+  height: 230px;
+  margin-left: 4.5rem;
+  margin-top: 7rem;
+}
+
+
+.Holder4techInfoCircle {
+  margin-top: -3rem;
+  margin-left: -1rem;}
+
+  .TechImage img {
+    height: 241px;
+}
+.TechInfo > p {
+  padding-left: 12px;
+  margin-left: -44px;
+  padding-right: 12px}
+
+  .TechInfo h3 {font-size: 38px; margin-left: -3rem;}
+
+    .TechInfo { margin-top: 1rem;}
+
+}
+
+
+@media screen and (max-width:390px){
+  .hamburger, .hamburger-A{
+  margin-left: 19.5rem;
+  }
+
+  .CrewHeadingHolder {margin-left: 2.5rem;}
+
+}
+
+
+
+/************************************ 
+Media query for 375px begins here 
+***************************************/
 
 @media screen and (max-width:375px){
 
@@ -425,10 +662,8 @@ width: 100%;
     width: 212px;
     margin-left: 1rem;
   position: absolute;
-
   /* height: 200vh; */
   backdrop-filter: blur(278.774227px);
-
 }
 
 
@@ -436,18 +671,21 @@ width: 100%;
   
   .open{
     /* display: block; */
-    margin-left: -2rem;
+    margin-left: 10rem;
     transition: 1s ease-in-out;
     z-index: 1;
     margin-top: 3.5rem;
     position: fixed;
-        height: 50vh;
+    height: 50vh;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
   
 .close{
-  margin-left: 14rem;
+  margin-left: 24rem;
   transition: 1s ease-in-out;
   z-index: 1;
+  margin-top: 3.5rem;
 }
  
 
@@ -456,7 +694,7 @@ width: 100%;
     color: white;
   font-size: 2rem;
   margin-top: 1.6rem;
-  margin-left: 7.5rem;
+  margin-left: 18.5rem;
 cursor: pointer;
 position: fixed;
 z-index: 1;
@@ -468,6 +706,10 @@ z-index: 1;
   .logo {
     position: fixed;
     margin-right: 18rem;}
+
+
+    .destInforMenuBar ul {
+      margin-left: 0rem;}
 
 
 /* media query for .MenuBar ends here */
@@ -499,7 +741,7 @@ z-index: 1;
 
 .exploreBody{margin-left: 5rem;}
   .explore {
-  
+    margin-left: unset;
     width: 160px;
     height: 160px;
     margin-top: 1.9rem;
@@ -515,7 +757,14 @@ Media query for tECHNOLOGY content
 ******************************* */
 .Holder4techInfoCircle{
 display: flex;
+margin-left: 1rem;
+margin-top: -1.5rem;
 }
+
+.TechInfo > p {
+  padding-right: unset;
+}
+
 
 .techInfoCircle {
   width: 50px;

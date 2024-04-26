@@ -6,7 +6,7 @@ import Homecss from "./Main.module.css"
 // import HomeBackgdImageMobileA from "./assets/assets/home/background-home-tablet.jpg";
 import "./index.css";
 
-function MainInfo() {
+function MainInfo({ setActiveComponent }: { setActiveComponent: (component: string) => void }) {
   //   document.body.style.backgroundImage = `url(${HomeBackgroundImage})`;
 
   return (
@@ -25,7 +25,7 @@ function MainInfo() {
         </div>
 
         <div className="exploreBody">
-          <div className="explore">
+          <div className="explore" onClick={() => {setActiveComponent('Destination') }}>
             <p>EXPLORE</p>
           </div>
         </div>

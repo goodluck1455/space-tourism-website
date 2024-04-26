@@ -145,6 +145,112 @@ height: 10rem;
 }
 
 /* MEDIA QUERY BEGINS HERE */
+
+@media screen and (max-width:768px){
+  .CrewBody {display: block;}
+
+  .CrewInfoDetails {
+    margin-top: 3rem;
+    margin-left: unset;
+    width: unset;
+    text-align: center;}
+
+/* .break{display: none;} */
+.CrewSelectHolder {margin-top: -1rem;margin-left: 19rem;}
+.CrewHeadingHolder {margin-left: 2rem;}
+
+.CrewPictures {
+  width: 53.5%;}
+
+.ActiveDougImage {
+  width: 55.5%;
+  margin-top: 4.6rem;
+  margin-left: 13rem;}
+
+  .CrewSelect {
+    width: 20px;
+    height: 20px;}
+    .ActiveMarkImage {
+      width: 51.5%;
+      margin-top: 4.2rem;
+      margin-left: 9rem;}
+
+
+      .ActiveVictorImage{
+        margin-top: 5.6rem;
+        width: 62.5%;
+        margin-left: 8rem;
+      }
+
+      .ActiveImage {
+        width: 68.5%;
+        margin-top: 6.6rem;
+        margin-left: 8rem;}
+}
+
+
+@media screen and (max-width:414px), (max-width:430px){
+  .CrewHeadingHolder {    margin-top: 6rem; margin-left: 3rem;}
+  .CrewInfoDetails p {
+    padding: 12px;
+    }
+    .CrewBody {
+      display: inline-flex;
+          flex-direction: column-reverse;}
+    .CrewInfoDetails h2 {
+      font-size: 30px;}
+
+    .Crewbreak{display: none;}
+    .CrewInfoDetails {
+      margin-left: 0.1rem;
+      width: 100%;
+      margin-top: 5rem;
+    }
+
+      .hrRule4Crew{
+        display: block;
+        width: 345px;
+        /* height: 0.5px; */
+        margin-top: -0.3rem;
+        margin-left: 2rem;
+        opacity: 0.2515;
+        background: #FFF;
+      }
+
+      .CrewSelectHolder {
+        margin-left: 8.5rem;
+        margin-top: -21.5rem;}
+
+      .ActiveMarkImage {
+        margin-top: 4.1rem;
+        margin-left: 5rem;}
+
+
+        .ActiveDougImage {
+          width: 61.5%;
+          margin-top: 2.1rem;
+          margin-left: 6.5rem;
+      }
+
+      .ActiveVictorImage {
+        margin-top: 2.3rem;
+        width: 70.5%;
+        margin-left: 4rem;
+    }
+
+    .ActiveImage {
+      width: 73.5%;
+      margin-top: 3.8rem;
+      margin-left: 3rem;
+  }
+
+}
+
+
+/************************************ 
+Media query for 375px begins here 
+***************************************/
+
 @media screen and (max-width:375px){
 
 .CrewBody {
@@ -221,7 +327,7 @@ display: inline-flex;
             
             width: 20px;
             height: 20px;}
-.break, .break_A{
+.Crewbreak, .break_A{
   display: none;
 } 
  

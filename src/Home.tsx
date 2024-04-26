@@ -16,14 +16,15 @@ import TechInfo from "./TechInfo";
 
 interface HomeProps {
   // Add any props that Home component may receive
+  setActiveComponent: (component: string) => void;
+  activeComponent: string;  
 }
 
 const Home: React.FC<HomeProps> = () => {
   //  document.body.style.backgroundImage = `url(${HomeBackgroundImage})`;
 // let backGroundImage4Body = document.body.style.backgroundImage;
   const [activeComponent, setActiveComponent] = useState("home");
-  // const [activeOpen, setOpen] = useState(false);
-  // const [screenSize, setScreenSize] = useState('');
+
 
   const displayComponent = (component: string) => {
     if (activeComponent!== component) {
@@ -53,7 +54,7 @@ const Home: React.FC<HomeProps> = () => {
           </div>
         </div>
 
-        {activeComponent === "home" && <MainInfo />}
+        {activeComponent === "home" && <MainInfo  setActiveComponent={displayComponent} />}
         {activeComponent === "Destination" && <DestInfo />}
         {activeComponent === "Crew" && <CrewInfo />}
         {activeComponent === "technology" && <TechInfo />}

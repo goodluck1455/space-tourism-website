@@ -181,8 +181,138 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
   @media screen and (max-width:1024px){
     .destinationContent {gap: 4rem;}
     .destLogo { margin-left: -1.5rem; width: 100%;}
+
+    .destInforMenuBar {
+      margin-left: -1.5rem;}
+
+      .destInforMenuBar ul li {
+        height: 29px;
+        margin-right: 25px;}
+
   }
 
+
+
+
+  @media screen and (max-width:768px), (max-width:820px){
+    .destinationContent {display: block;}
+    .destLogo {
+     margin-top: 2rem;
+     margin-left: 5rem;
+     width: 70%;}
+
+     .destInforMenuBar ul {margin-left: 6rem;}
+
+     .destInforMenuBar ul li {
+       height: 32px;}
+       .destInforMenuBar {margin-left: unset; margin-top: 2rem;}
+
+       .monInfo {
+        font-size: 22px;
+        text-align: center;
+        width: unset;}
+
+       .distance4Moon { justify-content: space-evenly;}
+       .hrRule4Moon {
+         width: 637px;
+         height: 0.3px;}
+         .distance4MoonContentA h3, .distance4MoonContentB h3 { padding-top: 12px;}
+         .distance4MoonContentA p, .distance4MoonContentB p {font-size: 17px;}
+
+
+  }
+
+  @media screen and (max-width:414px), (max-width:430px){
+    .DestHeadBody h3 {
+      width: 27rem;
+      margin-left: -2.5rem;
+      margin-top: 2.5rem;
+  }
+
+  .DestHeading {font-size: 19px;}
+
+  .destLogo {
+    margin-top: -1rem;
+        margin-left: 3rem;}
+
+
+        .destInforMenuBar {
+          margin-left: 0rem;}
+
+    .destInforMenuBar ul {
+      margin-left: -1.6rem;
+  }
+
+    .destInforMenuBar ul li {
+      margin-right: 26px;
+      font-size: 1.3rem;
+      height: 22px;
+  }
+  .Dmoon {margin-left: -1rem; font-size: 81px;}
+
+  .monInfo {
+    /* text-align: center; */
+    width: 24rem;
+    margin-left: -3rem;
+}
+
+
+.distance4Moon {
+  padding-top: 2rem;
+  display: block;
+  text-align: center;}
+  .hrRule4Moon {
+    margin-top: 1.5rem;
+    opacity: 0.2515;
+    width: 347px;
+    margin-left: -1.5rem;}
+
+    .distance4MoonContentA {
+      margin-right: unset;
+  }
+
+    .distance4MoonContentB{
+       margin-top: 2rem;
+    }
+
+    .distance4MoonContentA h3, .distance4MoonContentB h3 {
+      padding-top: 10px;}
+
+  }
+
+
+  @media screen and (max-width:412px){
+    .destInforMenuBar {
+      margin-left: 0rem;}
+  }
+
+
+
+  @media screen and (max-width:390px){
+
+    .DestHeading {
+      font-size: 17px;
+  }
+  
+  .destLogo { margin-top: -1rem; width: 74%;margin-left: 2rem;}
+  
+  .destInforMenuBar ul {
+    margin-left: -2rem;
+  }
+  .monInfo {width: 23rem;}
+     
+    .EuroMargin{
+       margin-left: -1.5rem;
+    }
+    .Dmoon {margin-left: unset;}
+
+  }
+
+
+
+/************************************ 
+Media query for 375px begins here 
+***************************************/
   @media screen and (max-width:375px){
     .destinationContent {
       display: block;
@@ -204,6 +334,7 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
     width: 90%;
     /* position: relative; */
         /* z-index: 2; */
+        margin-top: unset;
     margin-left: 0.4rem;}
 
     .destInforMenuBar {
@@ -250,9 +381,37 @@ CSS OF THE DESTINATION CONTENT BEGINS HERE
                     margin-top: -5rem;
                   }
 
+                  .destInforMenuBar ul {
+                    margin-left: 0rem;}
+
+
                   .destInforMenuBar ul li {
                     margin-right: 26px;
                     font-size: 1.1rem;
+                    height: 19px;
                 }
+
+  }
+
+  @media screen and (max-width:360px){
+    
+    .travelHeading h1 {margin-left: -0.8rem;}
+    .open {
+      /* display: block; */
+      margin-left: 7rem;}
+
+      .MenuBar {
+        width: 236px;}
+
+        .mainContent {margin-top: 6rem;} 
+        
+        
+
+        .monInfo { margin-left: -2rem;}
+ 
+        .TechInfo {
+          margin-top: 1rem;
+          margin-left: 2.5rem;
+      }
 
   }

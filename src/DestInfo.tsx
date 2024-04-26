@@ -100,7 +100,7 @@ const DestInfo: React.FC<DestInfoProps> = () => {
     <li className={activeDestination === 'EUROPA' ? 'active' : ''} onClick={() => displayDistination('EUROPA', europa)}>EUROPA</li>
     <li className={activeDestination === 'TITAN' ? 'active' : ''} onClick={() => displayDistination('TITAN', titan)}>TITAN</li>
     </ul>
-    <h2 className="Dmoon">{activeDestination}</h2>
+    <h2 className={`Dmoon ${activeDestination === 'EUROPA' ? 'EuroMargin' : ''}`}>{activeDestination}</h2>
     <p className="monInfo">{activeDestanceTime.info}</p>
 
     <hr className="hrRule4Moon" />

@@ -24,9 +24,9 @@ const CrewInfo: React.FC<CrewInfoProps> = () => {
             name: " Douglas Hurley",
             biodata: (
                  <>
-            Douglas Gerald Hurley is an American engineer, former  <br className="break" />
-            Marine Corps pilot and former NASA astronaut. He  <br className="break" />
-            launched into space for the third time as commander of  <br className="break" />
+            Douglas Gerald Hurley is an American engineer, former  <br className="Crewbreak" />
+            Marine Corps pilot and former NASA astronaut. He  <br className="Crewbreak" />
+            launched into space for the third time as commander of  <br className="Crewbreak" />
             Crew Dragon Demo-2. 
             </>
              )
@@ -37,9 +37,9 @@ const CrewInfo: React.FC<CrewInfoProps> = () => {
             name: " MARK SHUTTLEWORTH",
             biodata: (
                 <>
-         Mark Richard Shuttleworth is the founder and CEO of <br className="break" />
-         Canonical, the company behind the Linux-based Ubuntu <br className="break" />
-         operating system. Shuttleworth became the first South <br className="break" />
+         Mark Richard Shuttleworth is the founder and CEO of <br className="Crewbreak" />
+         Canonical, the company behind the Linux-based Ubuntu <br className="Crewbreak" />
+         operating system. Shuttleworth became the first South <br className="Crewbreak" />
          African to travel to space as a space tourist. 
            </>
             )
@@ -51,9 +51,9 @@ const CrewInfo: React.FC<CrewInfoProps> = () => {
             name: " Victor Glover",
             biodata: (
                 <>
-          Pilot on the first operational flight of the SpaceX Crew <br className="break" />
-          Dragon to the International Space Station. Glover is a <br className="break" />
-          commander in the U.S. Navy where he pilots an F/A-18.He <br className="break" />
+          Pilot on the first operational flight of the SpaceX Crew <br className="Crewbreak" />
+          Dragon to the International Space Station. Glover is a <br className="Crewbreak" />
+          commander in the U.S. Navy where he pilots an F/A-18.He <br className="Crewbreak" />
           was a crew member of Expedition 64, and served as a <br className="break_A" />
           station systems flight engineer. 
            </>
@@ -66,9 +66,9 @@ const CrewInfo: React.FC<CrewInfoProps> = () => {
             name: "Anousheh Ansari",
             biodata: (
                 <>
-          Anousheh Ansari is an Iranian American engineer and <br className="break" />
-          co-founder of Prodea Systems. Ansari was the fourth <br className="break" />
-          self-funded space tourist, the first self-funded woman to <br className="break" />
+          Anousheh Ansari is an Iranian American engineer and <br className="Crewbreak" />
+          co-founder of Prodea Systems. Ansari was the fourth <br className="Crewbreak" />
+          self-funded space tourist, the first self-funded woman to <br className="Crewbreak" />
            fly to the ISS, and the first Iranian in space. 
            </>
             )
