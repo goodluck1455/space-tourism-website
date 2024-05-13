@@ -1,5 +1,11 @@
 // import  {  useEffect } from 'react';
 // import "./main.css";
+// "use client";
+import {motion as m} from "framer-motion";
+
+
+
+
 import Homecss from "./Main.module.css"
 // import HomeBackgroundImage from "./assets/assets/home/background-home-desktop.jpg";
 // import HomeBackgdImageMobile from "./assets/assets/home/background-home-mobile.jpg";
@@ -11,7 +17,11 @@ function MainInfo({ setActiveComponent }: { setActiveComponent: (component: stri
 
   return (
     <>
-    <div className={Homecss.mainPageImag}>
+    <m.div className={Homecss.mainPageImag} 
+    initial={{opacity: 0}} 
+    animate={{opacity: 1}} 
+    transition={{duration: 0.9, ease:"easeInOut"}}
+    exit={{opacity: 0}} >
       <div className="mainContent">
         <div className="travelHeading">
           <h3 className="">SO, YOU WANT TO TRAVEL TO</h3>
@@ -23,14 +33,16 @@ function MainInfo({ setActiveComponent }: { setActiveComponent: (component: stri
             world experience!
           </p>
         </div>
-
+     
         <div className="exploreBody">
-          <div className="explore" onClick={() => {setActiveComponent('Destination') }} >
+      
+          <div className="explore border-neutral-200 dark:border-slate-800" onClick={() => {setActiveComponent('Destination') }} >
             <p>EXPLORE</p>
           </div>
+       
         </div>
       </div>
-      </div>
+      </m.div>
     </>
   );
 }

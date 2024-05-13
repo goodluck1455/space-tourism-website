@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import {motion as m} from "framer-motion";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import TechInfoBackgroundImage from "./assets/assets/technology/background-technology-desktop.jpg";
 import LaunchVehicle from "./assets/assets/technology/image-launch-vehicle-portrait.jpg"
@@ -82,7 +83,15 @@ const TechInfo: React.FC<TechInfoProps> = () => {
     return (
           <>
 
-        <div>
+        <m.div
+        
+        initial={{opacity: 0}} 
+        animate={{opacity: 1}} 
+        transition={{duration: 0.9, ease:"easeInOut"}}
+        exit={{opacity: 0}}
+        
+        
+        >
 
             <div>
             <div className='CrewHeadingHolder'>
@@ -124,7 +133,7 @@ const TechInfo: React.FC<TechInfoProps> = () => {
 
 
             
-        </div>
+        </m.div>
         </>
     );
 };

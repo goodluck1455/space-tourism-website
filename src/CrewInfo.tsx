@@ -1,8 +1,14 @@
-import  { useState } from 'react';
+import  { useState} from 'react';
 import './index.css';
-import "./CrewInfo.css"
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import "./CrewInfo.css";
 
+
+
+
+// import 'swiper/swiper-bundle.min.css';
+
+// import 'bootstrap/dist/css/bootstrap.min.css';
+import {motion as m} from "framer-motion";
 // import CrewBackgroundImage from "./assets/assets/crew/background-crew-desktop.jpg";
 import DouglasHurley from "./assets/assets/crew/image-douglas-hurley.png";
 import MarkShuttleworth from "./assets/assets/crew/image-mark-shuttleworth.png";
@@ -11,11 +17,14 @@ import VictorGlover from "./assets/assets/crew/image-victor-glover.png";
 
 interface CrewInfoProps {
     // designation: string;
-    // name: string;
+    images: string;
 }
 
 const CrewInfo: React.FC<CrewInfoProps> = () => {
     // document.body.style.backgroundImage = `url(${CrewBackgroundImage})`;
+
+
+    
 
     const crewMembersInfo = [
         {
@@ -90,12 +99,22 @@ const CrewInfo: React.FC<CrewInfoProps> = () => {
           setActiveCrewMembersInfo(selectedBiodata);
         }
     }
+
+
+
+  
      
 
     return (
             <>
 
-
+           <m.div
+           
+           initial={{opacity: 0}} 
+           animate={{opacity: 1}} 
+           transition={{duration: 0.9, ease:"easeInOut"}}
+           exit={{opacity: 0}} >
+            
         <div className='CrewHeadingHolder'>
         <h3 className="CrewHeading"><span className="Crewnumber">02</span>Meet your crew</h3> 
         </div> 
@@ -122,15 +141,20 @@ const CrewInfo: React.FC<CrewInfoProps> = () => {
         </div>
         <hr className="hrRule4Crew" />
          <div>
+         
+    
             <img src={activeCrewImage} className={`CrewPictures ${activeCrewImage === AnoushehAnsari ? 'ActiveImage' : ''}
             ${activeCrewImage === MarkShuttleworth ? 'ActiveMarkImage' : ''}
             ${activeCrewImage === DouglasHurley ? 'ActiveDougImage' : ''}
             ${activeCrewImage === VictorGlover ? 'ActiveVictorImage' : ''}
             `} />
+           
          </div>
          
 
         </div>
+
+        </m.div>
         </>
     );
 };

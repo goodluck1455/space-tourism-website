@@ -17,14 +17,17 @@ import  { useState } from "react";
 interface MenuBarProps {
     setActiveComponent: (component: string) => void;
     activeComponent: string;  
+    activeHeader: boolean; 
 }
 
-const MenuBar: React.FC<MenuBarProps> = ({ setActiveComponent, activeComponent }) => {
+const MenuBar: React.FC<MenuBarProps> = ({ setActiveComponent, activeComponent, activeHeader }) => {
 
     const [activeOpen, setOpen] = useState(false);
+   
 
 
 
+    
 
     const showSideBar = ()=>{
 
@@ -41,7 +44,7 @@ const MenuBar: React.FC<MenuBarProps> = ({ setActiveComponent, activeComponent }
         <div>
            <div onClick={showSideBar} >
            {/* <FaIcons.FaBars className="hamburger"/> */}
-            {activeOpen ? <FaIcons.FaTimes className="hamburger-A" />  : <FaIcons.FaBars className="hamburger"/>}
+            {activeOpen ? <FaIcons.FaTimes className={` ${activeHeader ? "Activehamburger " : "hamburger-A"}`} />  : <FaIcons.FaBars className={activeHeader ? "Activehamburger " : "hamburger"} />}
             </div>
     
             <div className={`MenuBar ${activeOpen ? "open" : "close"}`}>

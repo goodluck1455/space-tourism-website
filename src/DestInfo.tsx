@@ -2,7 +2,7 @@ import  { useState } from 'react';
 // import BackgroundImage1 from "./assets/assets/destination/background-destination-desktop.jpg";
 import './index.css';
 import "./DestInfo.css"
-
+import {motion as m} from "framer-motion";
 import Homecss from "./Main.module.css"
 import EarthLogo1 from "./assets/assets/destination/image-moon.png"
 import MarsLogo1 from "./assets/assets/destination/image-mars.png"
@@ -80,7 +80,13 @@ const DestInfo: React.FC<DestInfoProps> = () => {
 
     return (
         <>
-        <div className={Homecss.mainPageImage}>
+        <m.div className={Homecss.mainPageImage}
+         initial={{opacity: 0}} 
+         animate={{opacity: 1}} 
+         transition={{duration: 0.9, ease:"easeInOut"}}
+         exit={{opacity: 0}}
+        
+        >
     <div className='CoverPage4DestiniNFO'>
     <div className="destinationContent">
 
@@ -126,7 +132,7 @@ const DestInfo: React.FC<DestInfoProps> = () => {
 </div>
         
 
-</div>
+</m.div>
         </>
     );
 };

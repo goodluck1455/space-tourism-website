@@ -144,9 +144,88 @@ height: 10rem;
   margin-top: -4.2rem;
 }
 
+
+
+/* @media screen and (max-width:1280px){
+  .CrewInfoDetails h2 {font-size: 42px;}
+
+  .CrewInfoDetails p {
+    line-height: 34px;
+    height: 12rem;
+    font-size: 1.5rem;
+
+}
+
+.CrewInfoDetails h3 {
+  font-size: 30px;}
+
+
+.ActiveVictorImage{
+  width: 87.5%;
+  margin-top: 1.6rem;
+  margin-right: 3.1rem;
+  margin-left: -1rem; }
+
+  .CrewSelect {
+    width: 20px;
+    height: 20px;}
+
+
+    .ActiveDougImage {
+      width: 79.5%; 
+      margin-top: -1.4rem;
+      margin-right: 5rem;}
+
+   .ActiveMarkImage   {
+      width: 71.5%;
+  margin-top: 0.4rem;
+  margin-right: 9.5rem;}
+
+  .ActiveImage {
+    width: 81.5%;
+    margin-top: 3.8rem;
+    margin-right: 7.5rem;
+}
+
+} */
+
+
+
+
+@media screen and (max-width:1024px){
+  .CrewSelectHolder {
+    margin-top: 0rem;}
+
+    .ActiveDougImage {
+      width: 86.5%;
+      margin-right: -8.8rem;
+      margin-top: -1.2rem;
+  }
+
+  .ActiveMarkImage {
+  width: 77%;
+  margin-top: -0.4rem;
+  margin-right: -3.5rem;
+}
+
+
+.ActiveVictorImage{
+width: 80.5%;
+/* margin-top: -1.4rem; */
+margin-right: -4.8rem;}
+
+.ActiveImage {
+  width: 86.5%;
+  margin-right: -4.9rem;
+}
+
+.CrewInfoDetails {
+  margin-top: 5rem;}
+}
+
 /* MEDIA QUERY BEGINS HERE */
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px), (max-width:914px){
   .CrewBody {display: block;}
 
   .CrewInfoDetails {

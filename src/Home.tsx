@@ -21,20 +21,31 @@ interface HomeProps {
 
   setActiveComponent?: () => void;
   activeComponent?: any; 
+  activeheader?: any;
 }
 
 const Home: React.FC<HomeProps> = () => {
   //  document.body.style.backgroundImage = `url(${HomeBackgroundImage})`;
 // let backGroundImage4Body = document.body.style.backgroundImage;
   const [activeComponent, setActiveComponent] = useState("home");
+  const [activeheader, setActiveheader] = useState(false);
+
+  const changerHeaderBackground = ()=>{
+    if(window.scrollY >= 80){
+        setActiveheader(true);
+    }
+    else{
+        setActiveheader(false);
+    }
+}
+window.addEventListener("scroll", changerHeaderBackground);
+
 
 
   const displayComponent = (component: string) => {
     if (activeComponent!== component) {
       setActiveComponent(component); 
-
     }
-
   };
 
   return (
@@ -44,8 +55,8 @@ const Home: React.FC<HomeProps> = () => {
       ${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}
       ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`} >
 
-        <div className="header">
-          <div className="logo">
+        <div className={ activeheader ? "activeHeader" :"header"} >
+          <div className="logo" >
             <img src={ImageLogo} />
           </div>
           <hr className="lineRule" />
@@ -53,6 +64,7 @@ const Home: React.FC<HomeProps> = () => {
             <MenuBar
               setActiveComponent={displayComponent}
               activeComponent={activeComponent}
+              activeHeader={activeheader}
             />
           </div>
         </div>
@@ -67,3 +79,7 @@ const Home: React.FC<HomeProps> = () => {
 };
 
 export default Home;
+
+
+
+
