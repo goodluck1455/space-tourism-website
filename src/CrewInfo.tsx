@@ -17,7 +17,7 @@ import VictorGlover from "./assets/assets/crew/image-victor-glover.png";
 
 interface CrewInfoProps {
     // designation: string;
-    images: string;
+    // images: string;
 }
 
 const CrewInfo: React.FC<CrewInfoProps> = () => {
