@@ -188,7 +188,21 @@ height: 10rem;
 }
 
 } */
+@media screen and (max-width:1280px){
 
+  .hrRule4Crew{
+    display: block;
+  position: absolute;
+  left: 34rem;
+        width: 40%;
+        top: 43.5rem;
+  }
+
+
+  .CrewHeadingHolder {
+    margin-top: 9.2rem;}
+
+}
 
 
 

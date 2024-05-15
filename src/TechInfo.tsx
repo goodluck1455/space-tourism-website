@@ -85,8 +85,8 @@ const TechInfo: React.FC<TechInfoProps> = () => {
 
         <m.div
         
-        initial={{opacity: 0}} 
-        animate={{opacity: 1}} 
+        initial={{opacity: 0, translateY: 150}} 
+        animate={{opacity: 1, translateY: 0}} 
         exit={{opacity: 0}}
         transition={{duration: 0.9, ease:"easeInOut"}}
        

@@ -41,9 +41,12 @@
   /* // import TechInfoBackgroundImage from "./assets/assets/technology/background-technology-desktop.jpg"; */
   @media screen and (max-width:1280px){
     .homePage{
-      height: 100vh;}
+      height: 103vh;}
 
-
+      .mainPageImage{
+        /* Destination Info */
+        height: 100vh;
+      }
      
 
   }

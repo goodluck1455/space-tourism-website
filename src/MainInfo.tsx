@@ -18,8 +18,8 @@ function MainInfo({ setActiveComponent }: { setActiveComponent: (component: stri
   return (
     <>
     <m.div className={Homecss.mainPageImag} 
-    initial={{opacity: 0}} 
-    animate={{opacity: 1}} 
+    initial={{opacity: 0, translateY: 100}} 
+    animate={{opacity: 1, translateY: 0}} 
     transition={{duration: 0.9, ease:"easeInOut"}}
     exit={{opacity: 0}} >
       <div className="mainContent">
