@@ -30,15 +30,15 @@ const Home: React.FC<HomeProps> = () => {
   const [activeComponent, setActiveComponent] = useState("home");
   const [activeheader, setActiveheader] = useState(false);
 
-  const changerHeaderBackground = ()=>{
-    if(window.scrollY >= 80){
-        setActiveheader(true);
-    }
-    else{
-        setActiveheader(false);
-    }
-}
-window.addEventListener("scroll", changerHeaderBackground);
+//   const changerHeaderBackground = ()=>{
+//     if(window.scrollY >= 80){
+//         setActiveheader(true);
+//     }
+//     else{
+//         setActiveheader(false);
+//     }
+// }
+// window.addEventListener("scroll", changerHeaderBackground);
 
 
 
@@ -55,7 +55,7 @@ window.addEventListener("scroll", changerHeaderBackground);
       ${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}
       ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`} >
 
-        <div className={ activeheader ? "activeHeader" :"header"} >
+        <div className={ activeheader ? "" :"header"} >
           <div className="logo" >
             <img src={ImageLogo} />
           </div>

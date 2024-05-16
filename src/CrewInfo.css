@@ -5,6 +5,23 @@
   } */
 
 
+  @media screen and (max-width:1366px){
+    .hrRule4Crew{
+      display: block;
+        position: absolute;
+         left: 37rem;
+          width: 40%;
+          top: 41.5rem;
+    }
+  
+    /* .CrewHeadingHolder {
+      margin-top: 7.2rem;}  */
+  }
+
+
+
+
+
   /****************************************
 CSS OF THE CREWINFO CONTENT BEGINS HERE 
 *****************************************/
@@ -144,7 +161,11 @@ height: 10rem;
   margin-top: -4.2rem;
 }
 
+.hrRule4Crew{
+  display:none;
 
+  /* border: 1px solid red; */
+}
 
 /* @media screen and (max-width:1280px){
   .CrewInfoDetails h2 {font-size: 42px;}
@@ -188,18 +209,9 @@ height: 10rem;
 }
 
 } */
-@media screen and (max-width:1366px){
-  .hrRule4Crew{
-    display: block;
-      position: absolute;
-       left: 37rem;
-        width: 40%;
-        top: 41.5rem;
-  }
 
-  .CrewHeadingHolder {
-    margin-top: 7.2rem;}
-}
+
+
 
 
 
