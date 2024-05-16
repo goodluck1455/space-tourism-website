@@ -188,6 +188,21 @@ height: 10rem;
 }
 
 } */
+@media screen and (max-width:1366px){
+  .hrRule4Crew{
+    display: block;
+      position: absolute;
+       left: 37rem;
+        width: 40%;
+        top: 41.5rem;
+  }
+
+  .CrewHeadingHolder {
+    margin-top: 7.2rem;}
+}
+
+
+
 @media screen and (max-width:1280px){
 
   .hrRule4Crew{
@@ -235,6 +250,13 @@ margin-right: -4.8rem;}
 
 .CrewInfoDetails {
   margin-top: 5rem;}
+
+
+
+  .hrRule4Crew{
+    display: none;
+     
+  }
 }
 
 /* MEDIA QUERY BEGINS HERE */
@@ -281,6 +303,17 @@ margin-right: -4.8rem;}
         margin-left: 8rem;}
 }
 
+@media screen and (max-width:430px){
+  .hrRule4Crew{
+    top: 33.4rem;
+  }
+}
+
+@media screen and (max-width:414px){
+  .hrRule4Crew{
+    top: 32.5rem;
+  }
+}
 
 @media screen and (max-width:414px), (max-width:430px){
   .CrewHeadingHolder {    margin-top: 6rem; margin-left: 3rem;}
@@ -304,8 +337,8 @@ margin-right: -4.8rem;}
         display: block;
         width: 345px;
         /* height: 0.5px; */
-        margin-top: -0.3rem;
-        margin-left: 2rem;
+      
+       left: 2rem;
         opacity: 0.2515;
         background: #FFF;
       }
@@ -343,7 +376,12 @@ margin-right: -4.8rem;}
 /************************************ 
 Media query for 375px begins here 
 ***************************************/
+@media screen and (max-width:390px){
+  .hrRule4Crew{
+  top: 31.4rem;
+        left: 1.5rem;}
 
+}
 @media screen and (max-width:375px){
 
 .CrewBody {
@@ -380,11 +418,15 @@ display: inline-flex;
         } */
 
         .hrRule4Crew{
-          display: block;
+          /* display: block; */
           width: 345px;
           /* height: 0.5px; */
-          margin-top: -0.3rem;
-          margin-left: 1rem;
+
+          left: 0.9rem;
+          top: 27.6rem;
+
+          /* margin-top: -0.3rem;
+          margin-left: 1rem; */
           opacity: 0.2515;
           background: #FFF;
         }

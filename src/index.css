@@ -6,7 +6,7 @@
 *{
   padding: 0;
   margin: 0;
-
+ /* box-sizing: border-box; */
 }
 
 /* body{
@@ -378,28 +378,7 @@ width: 100%;
         width: 300px;
         height: 300px;}
 
-        .destInforMenuBar ul li {
-          height: 32px;
-          font-size: 1.8rem;}
-
-          .destinationContent {
-            gap: 12rem;}
-
-            .destInforMenuBar {
-              /* width: 327.4px; */
-              margin-left: -5rem;
-              margin-top: 6rem;
-            }
-
-
-            
-
-              .Dmoon {
-                text-align: justify;
-                text-align: center;
-            }
-            .distance4MoonContentA p, .distance4MoonContentB p {
-              font-size: 17px;}
+      
 
               .hrRule4Moon {
                 width: 434px;}
