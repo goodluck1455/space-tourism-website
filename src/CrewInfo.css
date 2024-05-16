@@ -481,3 +481,10 @@ display: inline-flex;
   }
 
 }
+
+@media screen and (max-width:360px){
+  .hrRule4Crew{
+  top: 27rem;
+        left: 0.3rem;}
+
+}
