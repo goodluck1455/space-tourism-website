@@ -233,7 +233,7 @@ height: 10rem;
 
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px), (max-width:992px){
   .CrewSelectHolder {
     margin-top: 0rem;}
 
@@ -265,9 +265,8 @@ margin-right: -4.8rem;}
 
 
 
-  .hrRule4Crew{
-    display: none;
-     
+  .hrRule4Crew{ 
+      display: block; 
   }
 }
 

@@ -407,7 +407,7 @@ width: 100%;
    Media for width:1024px
 -----------------------------------*/
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1024px), (max-width:992px){
   .mainContent {
     margin-top: 0rem;
     gap: 8rem;}
@@ -481,7 +481,7 @@ width: 100%;
     font-size: 22px;}
 }
 
-@media screen and (max-width:768px), (max-width:820px), (max-width:853px), (max-width:540px){
+@media screen and (max-width:768px), (max-width:820px), (max-width:853px), (max-width:912px){
   .mainContent{
     display: block;
   
@@ -540,7 +540,7 @@ width: 100%;
 
 
 
-@media screen and (max-width:414px), (max-width:430px) {
+@media screen and (max-width:414px), (max-width:430px), (max-width:540px) {
   .MenuBar ul{
     flex-direction: column;
     padding-top: 0.5rem;

@@ -19,15 +19,18 @@ interface HomeProps {
   // setActiveComponent: (component: string) => void;
   // activeComponent: string; 
 
-  setActiveComponent?: () => void;
-  activeComponent?: any; 
-  activeheader?: any;
+  activeComponent: string;
+  setActiveComponent: (component: string) => void;
+
+  // setActiveComponent?: () => void;
+  // activeComponent?: any; 
+  // activeheader?: any;
 }
 
-const Home: React.FC<HomeProps> = () => {
+const Home: React.FC<HomeProps> = ({ activeComponent, setActiveComponent }) => {
   //  document.body.style.backgroundImage = `url(${HomeBackgroundImage})`;
 // let backGroundImage4Body = document.body.style.backgroundImage;
-  const [activeComponent, setActiveComponent] = useState("home");
+  // const [activeComponent, setActiveComponent] = useState("home");
   const [activeheader, setActiveheader] = useState(false);
 
 //   const changerHeaderBackground = ()=>{
@@ -52,7 +55,7 @@ const Home: React.FC<HomeProps> = () => {
     <>
       <div className= {`${activeComponent === 'home' ? Homecss.homePage : ''} 
       ${activeComponent === 'Destination' ? Homecss.mainPageImage : ''} 
-      ${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}
+      
       ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`} >
 
         <div className={ activeheader ? "" :"header"} >
