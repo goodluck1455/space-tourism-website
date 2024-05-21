@@ -53,8 +53,7 @@ const Home: React.FC<HomeProps> = ({ activeComponent, setActiveComponent }) => {
 
   return (
     <>
-      <div className= {`${activeComponent === 'home' ? Homecss.homePage : ''} 
-      ${activeComponent === 'Destination' ? Homecss.mainPageImage : ''} 
+      <div className= {`
       
       ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`} >
 
@@ -71,7 +70,7 @@ const Home: React.FC<HomeProps> = ({ activeComponent, setActiveComponent }) => {
             />
           </div>
         </div>
-
+         
         {activeComponent === "home" && <MainInfo  setActiveComponent={displayComponent} />}
         {activeComponent === "Destination" && <DestInfo />}
         {activeComponent === "Crew" && <CrewInfo />}

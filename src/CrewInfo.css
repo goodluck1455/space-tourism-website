@@ -5,7 +5,7 @@
   } */
 
 
-  @media screen and (max-width:1366px){
+  /* @media screen and (max-width:1366px){
     .hrRule4Crew{
       display: block;
         position: absolute;
@@ -14,9 +14,8 @@
           top: 41.5rem;
     }
   
-    /* .CrewHeadingHolder {
-      margin-top: 7.2rem;}  */
-  }
+   
+  } */
 
 
 
@@ -280,10 +279,13 @@ margin-right: -4.8rem;}
     margin-left: unset;
     width: unset;
     text-align: center;}
+    .hrRule4Crew {
+      display: none;
+  }
 
 /* .break{display: none;} */
 .CrewSelectHolder {margin-top: -1rem;margin-left: 19rem;}
-.CrewHeadingHolder {margin-left: 2rem;}
+.CrewHeadingHolder {margin-left: 2rem; margin-top: 3.2rem;}
 
 .CrewPictures {
   width: 53.5%;}

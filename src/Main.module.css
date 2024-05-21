@@ -18,11 +18,21 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+    /* height: 100vh; 
+    position: fixed; */
+    /* width: 100vw; */
   }
 
   .mainPageImage{
     /* Destination Info */
     background-image: url("./assets/assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100vh;  */
+    /* position: fixed; */
+    /* width: 100vw; */
   }
 
   .crewPageImage{
@@ -33,13 +43,20 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
-   
+    /* height: 100vh;  */
+     /* width: 100vw; */
     
   }
 
   .technologyPageImage{
     /* Destination Info */
     background-image: url("./assets/assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* height: 100vh;  */
+    /* width: 100vw; */
   }
 
   @media screen and (max-width:1366px){
@@ -50,7 +67,7 @@
 
   /* // import TechInfoBackgroundImage from "./assets/assets/technology/background-technology-desktop.jpg"; */
   @media screen and (max-width:1280px){
-    .homePage{
+    /* .homePage{
       height: 103vh;}
 
       .mainPageImage{
@@ -58,9 +75,9 @@
         height: 100vh;
       }
       .crewPageImage{
-        height: 100vh; /* Ensures the element takes up the full height of the viewport */
+        height: 100vh; 
         width: 100vw;
-      }
+      } */
 
   }
 
@@ -69,6 +86,7 @@
 
   @media screen and (max-width:1024px){
     .homePage{
+      display: block;
       /* for hom */
       background-size: cover;
       overflow-x: hidden;
@@ -92,6 +110,7 @@
 
   @media screen and (max-width:768px), (max-width:740px), (max-width:820px), (max-width:853px) {
     .homePage{
+      display: block;
       background-image: url("./assets/assets/home/background-home-tablet.jpg");
       height: 100vh;
     }
@@ -99,7 +118,7 @@
     .crewPageImage{
       /* Destination Info */
       background-image: url("./assets/assets/crew/background-crew-tablet.jpg");
-      /* height: 111.9vh; */
+      height: 111.9vh;
     }
 
     .technologyPageImage{
@@ -118,12 +137,22 @@
   }
 
 
+  @media screen and (max-width:540px){
+    .homePage{
+     display: none;
+     /* opacity: 0; */
+    }
+  }
+
+
   @media screen and (max-width:414px), (max-width:430px){
     .homePage{
       /* for hom */
+      display: block;
       background-image: url("./assets/assets/home/background-home-mobile.jpg");
       height: 100vh;
       overflow-x: hidden;
+      position: unset;
     }
 
     .mainPageImage{
@@ -155,7 +184,7 @@
     } */
 
     .homePage{
-      /* for hom */
+      display: block;
       background-image: url("./assets/assets/home/background-home-mobile.jpg");
       height: 100vh;
       overflow-x: hidden;

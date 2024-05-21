@@ -6,7 +6,7 @@ import {motion as m} from "framer-motion";
 
 
 
-import Homecss from "./Main.module.css"
+// import Homecss from "./Main.module.css"
 // import HomeBackgroundImage from "./assets/assets/home/background-home-desktop.jpg";
 // import HomeBackgdImageMobile from "./assets/assets/home/background-home-mobile.jpg";
 // import HomeBackgdImageMobileA from "./assets/assets/home/background-home-tablet.jpg";
@@ -17,7 +17,8 @@ function MainInfo({ setActiveComponent }: { setActiveComponent: (component: stri
 
   return (
     <>
-    <m.div className={Homecss.mainPageImag} 
+     
+    <m.div className="maininfo"
     initial={{opacity: 0, translateY: 100}} 
     animate={{opacity: 1, translateY: 0}} 
     transition={{duration: 0.9, ease:"easeInOut"}}

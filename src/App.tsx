@@ -12,13 +12,16 @@ const App: React.FC = () => {
 
   return (
     <>
-    <body className={`${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}` } >
+    <div className={`${activeComponent === 'Crew' ? Homecss.crewPageImage : ''}
+    ${activeComponent === 'home' ? Homecss.homePage : ''} 
+    ${activeComponent === 'Destination' ? Homecss.mainPageImage : ''} 
+    ` } >
       <Home 
       activeComponent={activeComponent}
       setActiveComponent={setActiveComponent}
       
       />
-      </body>
+      </div>
     </>
   );
 }
