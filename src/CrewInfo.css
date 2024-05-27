@@ -265,7 +265,7 @@ margin-right: -4.8rem;}
 
 
   .hrRule4Crew{ 
-      display: block; 
+      display: none; 
   }
 }
 
@@ -318,13 +318,17 @@ margin-right: -4.8rem;}
 
 @media screen and (max-width:430px){
   .hrRule4Crew{
-    top: 33.4rem;
+    /* top: 33.4rem; */
+    margin-left: 2rem;
+    margin-top: -0.2rem;
   }
 }
 
 @media screen and (max-width:414px){
   .hrRule4Crew{
-    top: 32.5rem;
+    /* top: 32.5rem; */
+    margin-left: 1.8rem;
+    margin-top: -0.2rem;
   }
 }
 
@@ -435,9 +439,10 @@ display: inline-flex;
           width: 345px;
           /* height: 0.5px; */
 
-          left: 0.9rem;
-          top: 27.6rem;
-
+          /* left: 0.9rem;
+          top: 27.6rem; */
+          margin-left: 0.8rem;
+          margin-top: -0.3rem;
           /* margin-top: -0.3rem;
           margin-left: 1rem; */
           opacity: 0.2515;
@@ -497,7 +502,15 @@ display: inline-flex;
 
 @media screen and (max-width:360px){
   .hrRule4Crew{
-  top: 27rem;
-        left: 0.3rem;}
+
+    margin-left: 0.3rem;
+  /* top: 27rem;
+        left: 0.3rem; */
+      }
+
+      .CrewSelectHolder {
+        margin-left: 6.8rem;
+        margin-top: -20.5rem;
+    }
 
 }
