@@ -59,14 +59,14 @@
     /* width: 100vw; */
   }
 
-  @media screen and (max-width:1366px){
+  /* @media screen and (max-width:1366px){ */
     /* .homePage, .technologyPageImage{
       height: 103vh;} */
  
-  }
+  /* } */
 
   /* // import TechInfoBackgroundImage from "./assets/assets/technology/background-technology-desktop.jpg"; */
-  @media screen and (max-width:1280px){
+  /* @media screen and (max-width:1280px){
     .homePage{
       height: 103vh;}
 
@@ -79,7 +79,7 @@
         width: 100vw;
       } 
 
-  }
+  } */
 
  
 
