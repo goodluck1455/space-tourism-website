@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
 import "./index.css";
 import Homecss from "./Main.module.css"
@@ -31,7 +31,7 @@ const Home: React.FC<HomeProps> = ({ activeComponent, setActiveComponent }) => {
   //  document.body.style.backgroundImage = `url(${HomeBackgroundImage})`;
 // let backGroundImage4Body = document.body.style.backgroundImage;
   // const [activeComponent, setActiveComponent] = useState("home");
-  const [activeheader, setActiveheader] = useState(false);
+  // const [activeheader, setActiveheader] = useState(false);
 
 //   const changerHeaderBackground = ()=>{
 //     if(window.scrollY >= 80){
@@ -57,7 +57,7 @@ const Home: React.FC<HomeProps> = ({ activeComponent, setActiveComponent }) => {
       
       ${activeComponent === 'technology' ? Homecss.technologyPageImage : ''}`} >
 
-        <div className={ activeheader ? "" :"header"} >
+        <div className="header">
           <div className="logo" >
             <img src={ImageLogo} />
           </div>
@@ -66,7 +66,7 @@ const Home: React.FC<HomeProps> = ({ activeComponent, setActiveComponent }) => {
             <MenuBar
               setActiveComponent={displayComponent}
               activeComponent={activeComponent}
-              activeHeader={activeheader}
+              // activeHeader={activeheader}
             />
           </div>
         </div>
